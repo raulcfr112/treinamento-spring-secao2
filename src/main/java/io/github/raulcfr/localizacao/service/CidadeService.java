@@ -52,6 +52,13 @@ public class CidadeService {
         repository.findByNomeLike("%%%%", pageable).forEach(System.out::println);
     }
 
+    public void listarCidadesPorNomeSQL() {
+        repository.findByNomeSqlNativo("São Paulo")
+                .stream()
+                .map(cidadeProjection -> new Cidade(cidadeProjection.getId(), cidadeProjection.getNome(), null))
+                .forEach(System.out::println);
+    }
+
     public List<Cidade> filtroDinamico(Cidade cidade) {
         ExampleMatcher matcher = ExampleMatcher
                 .matching()
