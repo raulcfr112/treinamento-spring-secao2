@@ -9,4 +9,13 @@ insert into tb_cidade
 values
     (1, 'São Paulo', 12369845),
     (2, 'Rio de Janeiro', 32669815),
-    (3, 'Fortaleza', 2645857);
+    (3, 'Fortaleza', 2645857),
+    (4, 'Salvador', 6767865),
+    (5, 'Belo Horizonte', 425125),
+    (6, 'Porto Alegre', 87987678),
+    (7, 'Porto Velho', 678675),
+    (8, 'Palmas', 36953),
+    (9, 'Recife', 264586857),
+    (10, 'Natal', 1654372),
+    (11, 'Brasilia', 10000);
+;

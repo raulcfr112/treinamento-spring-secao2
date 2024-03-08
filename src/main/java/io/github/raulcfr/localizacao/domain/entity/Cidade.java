@@ -17,12 +17,12 @@ public class Cidade {
 
     @Id
     @Column(name = "id_cidade")
-    private long id;
+    private Long id;
 
     @Column(name = "nome", length = 50)
     private String nome;
 
     @Column(name = "qtd_habitantes")
-    private long habitantes;
+    private Long habitantes;
 
 }
